@@ -1,7 +1,8 @@
 # 0x00. C - Hello, World
----
 
+>
 > In this project we explore the basics of C programming language.
+>
 
 * What happens when you type gcc main.c
 * What is an entry point
@@ -13,3 +14,4 @@
 * What is the official C coding style and how to check your code with betty-style
 * How to find the right header to include in your source code when using a standard library function
 * How does the main function influence the return value of the program
+
