@@ -11,8 +11,17 @@ void print_num(int num)
 		_putchar('0' + num);
 	else
 	{
-		_putchar('0' + (num / 10));
-		_putchar('0' + (num % 10));
+		int digits[2];
+		int i = 1;
+
+		while (num != 0)
+		{
+			digits[i--] = num % 10;
+			num /= 10;
+		}
+
+		for (i = 0; i < 2; i++)
+			_putchar('0' + digits[i]);
 	}
 }
 
