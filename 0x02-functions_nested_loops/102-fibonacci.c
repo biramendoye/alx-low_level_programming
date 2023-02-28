@@ -11,18 +11,18 @@ int main(void)
 {
 	int i, tmp;
 	int LIMIT = 50;
-	unsigned long long int a = 1;
-	long long int b = 2;
+	unsigned int a = 1;
+	unsigned int b = 2;
 
-	printf("%ld, %ld, ", a, b);
+	printf("%u, %u, ", a, b);
 	for (i = 0; i < LIMIT - 1; i++)
 	{
-		printf("%ld, ", a + b);
+		printf("%u, ", a + b);
 		tmp = a;
 		a = b;
 		b = tmp + b;
 	}
-		printf("%ld\n", a + b);
-	
+		printf("%u\n", a + b);
+
 	return (0);
 }
