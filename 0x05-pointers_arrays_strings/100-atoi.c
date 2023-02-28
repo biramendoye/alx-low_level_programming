@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int output = 0;
+	unsigned int output = 0;
 	int minus_sign  = 0;
 	int first_digit  = 0;
 
