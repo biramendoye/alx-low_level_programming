@@ -27,11 +27,15 @@ int _strlen(char *s)
  */
 void rev_string(char *s)
 {
-	int j = _strlen(s) - 1;
+	const int SIZE = _strlen(s);
+	int j = SIZE - 1;
 	int i = 0;
 	char tmp;
 
-	while (i != j)
+	if (SIZE == 0)
+		return;
+
+	while (i < (SIZE / 2))
 	{
 		tmp = s[i];
 		s[i] = s[j];
