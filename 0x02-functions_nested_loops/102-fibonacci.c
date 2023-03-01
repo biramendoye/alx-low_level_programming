@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i, tmp;
-	int LIMIT = 50;
-	unsigned int a = 1;
-	unsigned int b = 2;
+	int LIMIT = 49;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
 
 	printf("%u, %u, ", a, b);
 	for (i = 0; i < LIMIT - 1; i++)
