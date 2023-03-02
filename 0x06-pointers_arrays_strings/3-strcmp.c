@@ -11,15 +11,13 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
-	char sum_char_code1 = 0;
-	char sum_char_code2 = 0;
 
 	while (s1[i] != '\0')
 	{
-		sum_char_code1 += s1[i];
-		sum_char_code2 += s2[i];
+		if (s1[i] != s2[i])
+			return (int) (s1[i] - s2[i]);
 		i++;
 	}
 
-	return (sum_char_code1 - sum_char_code2);
+	return (0);
 }
